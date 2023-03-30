@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cmath>
 
-#include "dist.h"
+#include "distance.h"
 
 using namespace std;
 

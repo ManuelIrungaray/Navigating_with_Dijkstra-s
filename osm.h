@@ -12,15 +12,6 @@ using namespace std;
 using namespace tinyxml2;
 
 
-//
-// Functions:
-//
-bool LoadOpenStreetMap(string filename, XMLDocument &xmldoc);
-int ReadMapNodes(XMLDocument &xmldoc, map<long long, Coordinates> &Nodes);
-int ReadFootways(XMLDocument &xmldoc, vector<FootwayInfo> &Footways);
-int ReadUniversityBuildings(XMLDocument &xmldoc,
-                            map<long long, Coordinates> &Nodes,
-                            vector<BuildingInfo> &Buildings);
 
 
 //
@@ -102,3 +93,14 @@ struct BuildingInfo
         Coords = Coordinates(id, lat, lon);
     }
 };
+
+
+//
+// Functions:
+//
+bool LoadOpenStreetMap(string filename, XMLDocument &xmldoc);
+int ReadMapNodes(XMLDocument &xmldoc, map<long long, Coordinates> &Nodes);
+int ReadFootways(XMLDocument &xmldoc, vector<FootwayInfo> &Footways);
+int ReadUniversityBuildings(XMLDocument &xmldoc,
+                            map<long long, Coordinates> &Nodes,
+                            vector<BuildingInfo> &Buildings);

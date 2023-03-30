@@ -25,7 +25,7 @@
 #include <sstream>
 
 #include "tinyxml2.h"
-#include "dist.h"
+#include "distance.h"
 #include "osm.h"
 #include "graph.h" // Graph implementation
 
