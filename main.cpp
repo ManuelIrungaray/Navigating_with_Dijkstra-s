@@ -276,7 +276,7 @@ int main()
     std::string def_filename = "map.osm";
     std::string filename;
 
-    std::cout << "Enter map filename> ";
+    std::cout << "Enter map filename> ""map.osm"" ";
     getline(std::cin, filename);
 
     if (filename == "")
@@ -322,7 +322,10 @@ int main()
 
     // Navigation from building to building
     std::string startBuilding, destBuilding;
-
+    std::cout << "Names of building: " << endl;
+    for ( auto B : Buildings){
+        cout << B.Fullname << endl;
+    }
     std::cout << "Enter start (partial name or abbreviation), or #> ";
     std::getline(std::cin, startBuilding);
 
@@ -401,3 +404,4 @@ int main()
     std::cout << "** Done **" << std::endl;
     return 0;
 }
+
